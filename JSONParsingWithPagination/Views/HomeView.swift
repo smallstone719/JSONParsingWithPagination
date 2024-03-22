@@ -22,10 +22,9 @@ struct HomeView: View {
     
     var body: some View {
         ScrollView(.vertical) {
-            LazyVGrid(columns: Array(repeating: GridItem(spacing: 10), count: 3)) {
+            LazyVGrid(columns: Array(repeating: GridItem(spacing: 10), count: 3), spacing: 24) {
                 ForEach(photos) { photo in
                     PhotoCardView(photo: photo)
-                       
                 }
             }
             .overlay(alignment: .bottom) {
