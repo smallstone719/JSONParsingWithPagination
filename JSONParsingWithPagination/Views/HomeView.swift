@@ -63,8 +63,6 @@ struct HomeView: View {
                     await MainActor.run {
                         if photos.isEmpty {
                             /// No more data
-                            /// Thỉnh thoảng yêu cầu này có thể bị lỗi
-                            /// Trong trường hop
                             page = lastFetchedPage
                             maxPage = lastFetchedPage
                         } else {
